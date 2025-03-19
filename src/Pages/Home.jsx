@@ -21,12 +21,12 @@ import NavImage from '/nav.png'
 const Home = () => {
   return (
     <div >
-      <div className='w-full h-[1150px]  border-2 border-red-600 bg-[#FDF8EE] sm:h-[1060px] md:h-[700px] md:w-full'>
+      <div className='w-full h-[1150px]   border-red-600 bg-[#FDF8EE] sm:h-[1060px] md:h-[700px] md:w-full'>
 
 
         <Navbar />
 
-        <div className="relative md:flex items-center justify-evenly w-full h-[570px] mt-2 sm:w-full border-2 border-black">
+        <div className="relative md:flex items-center justify-evenly w-full h-[570px] mt-2 sm:w-full  ">
           <img src={back} alt="" className="absolute top-0 left-0 w-[120%] h-full" />
           <div className="p-2 md:w-[585px]">
             <p className='text-[70px]'>The <span className='text-[#FFA135]'>smart</span></p>
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='border-2 border-black md:w-[600px] h-[503px]'>
+          <div className='  md:w-[600px] h-[503px]'>
             <img src={objects} alt="" className='md:w-full h-full' />
           </div>
         </div>
@@ -60,13 +60,13 @@ const Home = () => {
   data.map((item,index)=>(
 
  
-        <div className='flex flex-col items-center gap-y-7  border-2 border-green-500 mb-4 sm:w-full sm:flex-row sm:items-center sm:justify-center sm:gap-x-5'>
+        <div className='flex flex-col items-center gap-y-7   border-green-500 mb-4 sm:w-full sm:flex-row sm:items-center sm:justify-center sm:gap-x-5'>
   
-          <div className='w-[80px] h-[80px] border-2 border-black rounded-[23px] flex items-center justify-center mt-3 sm:w-[120px] sm:h-[80px] sm:mb-16'>
+          <div className='w-[80px] h-[80px]   rounded-[23px] flex items-center justify-center mt-3 sm:w-[120px] sm:h-[80px] sm:mb-16'>
           <img src={item.iconSrc} alt="" />
           </div>
          
-         <div className='border-2 border-black w-full h-[180px] text-justify p-2 sm:h-[150px] md:h-[220px] overflow-hidden'>
+         <div className='  w-full h-[180px] text-justify p-2 sm:h-[150px] md:h-[220px] overflow-hidden'>
            <h1 className='text-[28px]'>{item.title}</h1>
            <p className='text-xl  sm:text-[20px]'>{item.descriptions}</p>
          </div>
@@ -76,8 +76,8 @@ const Home = () => {
       </div>
 
 
-    <div className='w-full h-[350px] border-2 border-blue-400 flex flex-col items-center justify-center md:flex-row md:justify-evenly md:h-[200px]'>
-      <div className='w-[100px] h-[100px] border-2 border-black' >
+    <div className='w-full h-[350px]  border-blue-400 flex flex-col items-center justify-center md:flex-row md:justify-evenly md:h-[200px]'>
+      <div className='w-[100px] h-[100px]  ' >
 <img src={bulb} alt="" />
       </div>
       <div className='flex flex-col items-center'>
@@ -85,14 +85,14 @@ const Home = () => {
       <h1 className='text-[50px]'>Our Track</h1>
       <p className='text-[20px] pl-20 md:pl-0'>Lorem Ipsum is simply dummy text of the printing.</p>
       </div>
-      <div className='w-[100px] h-[100px] border-2 border-black' >
+      <div className='w-[100px] h-[100px]  ' >
 <img src={Group} alt="" />
       </div>
     </div>
 
 
 
-<div className='w-full border-2 border-black mt-2 flex flex-col gap-y-4 md:flex-row md:gap-x-4 md:p-6'>
+<div className='w-full   mt-2 flex flex-col gap-y-4 md:flex-row md:gap-x-4 md:p-6'>
 {
   cardData.map((course,index)=>(
     <Card course={course}/>
@@ -102,18 +102,18 @@ const Home = () => {
 </div>
 
 
-<div className='w-full h-[1000px] relative border-2 border-amber-300 mt-4 bg-[#FDF8EE] md:flex md:justify-evenly md:w-full md:h-[700px] '>
+<div className='w-full h-[1000px] relative  border-amber-300 mt-4 bg-[#FDF8EE] md:flex md:justify-evenly md:w-full md:h-[700px] '>
 <img src={back} alt="" className="absolute top-0 left-0 w-[120%] h-full object-center" />
 
-<div className='border-2 border-black md:flex-shrink-0'>
+<div className='  md:flex-shrink-0'>
 <img src={objects1} alt="" className='h-[600px] w-full object-cover md:h-full md:w-[516px]' />
 </div>
 
 
 
 
-<div className='flex flex-col items-center justify-center p-4 border-2 border-green-500 gap-y-4 md:h-[685px]'>
-<div className='hidden md:block md:w-full md:border-2 border-black md:relative left-8 md:overflow-hidden'>
+<div className='flex flex-col items-center justify-center p-4  border-green-500 gap-y-4 md:h-[685px]'>
+<div className='hidden md:block md:w-full md:  md:relative left-8 md:overflow-hidden'>
 <p className='md:text-[69px] '>Premium <span className='text-orange-500'>Learning</span></p>
 <p className='md:text-[69px] '>Experience</p>
   </div>
@@ -151,7 +151,7 @@ const Home = () => {
 
 </div>
 
-<div className='w-full h-[250px] border-2 border-blue-400 flex flex-col items-center justify-center md:flex-row md:justify-evenly md:h-[200px]'>
+<div className='w-full h-[250px]  border-blue-400 flex flex-col items-center justify-center md:flex-row md:justify-evenly md:h-[200px]'>
 
       <div className='flex flex-col items-center'>
 
@@ -161,7 +161,7 @@ const Home = () => {
     </div>
 
 
-<div className='w-full h-[902px] border-2 border-black flex flex-col gap-y-6 items-center md:w-full  md:flex-row md:h-[380px] md:p-20 md:gap-x-6'>
+<div className='w-full h-[902px]   flex flex-col gap-y-6 items-center md:w-full  md:flex-row md:h-[380px] md:p-20 md:gap-x-6'>
 {
   testimonials.map((Element,index)=>(
 <Testimonial
@@ -177,7 +177,7 @@ Element={Element}
 
 {/* professor card ui */}
 
-<div className='w-full border-2 border-black flex flex-col gap-y-4 md:flex-row'>
+<div className='w-full   flex flex-col gap-y-4 md:flex-row'>
   {
     profiles.map((professor,index)=>(
   
@@ -210,9 +210,9 @@ className='w-full h-[80px] rounded-[60px] pl-4 bg-white text-black ml-10
 
 {/* footer */}
 
-<div className='w-full bg-[#FDF8EE]  border-2 border-black flex flex-col gap-y-4 md:flex-row md:p-4 md:items-center'>
+<div className='w-full bg-[#FDF8EE]    flex flex-col gap-y-4 md:flex-row md:p-4 md:items-center'>
 
-<div className='border-2 border-black text-justify flex flex-col items-center p-4'>
+<div className='  text-justify flex flex-col items-center p-4'>
   <div className='w-[185px] h-[150px] md:w-[250px] '>
     <img src={NavImage} alt="" className='h-[51px] w-full' />
   </div>

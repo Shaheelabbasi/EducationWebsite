@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className>
 
     
-    <div className='flex items-center justify-between border-2 border-black'>
+    <div className='flex items-center justify-between'>
 
       <div className='ml-12 mt-8  mb-2 object-cover  md:h-full md:w-[152px] md:flex md:shrink-0'>
         <img src={NavImage} alt="not" className='w-full h-[52px]' />
@@ -20,7 +20,7 @@ const Navbar = () => {
 
 
 
-<div className='hidden md:flex gap-x-6 ml-[55px] mr-2 md:mr-0'>
+<div className='hidden md:flex gap-x-6 ml-[55px] mr-2 cursor-pointer md:mr-0'>
      <h1 className=' text-[18px] mt-4'>Home</h1>
      <h1 className=' text-[18px] mt-4'>About</h1>
      <h1 className=' text-[18px] mt-4' >Courses</h1>
@@ -44,7 +44,7 @@ const Navbar = () => {
     {
 
     IsMenuOpen ?
-    <div className='md:hidden flex flex-col gap-y-4'>
+    <div className='cursor-pointer gitmd:hidden flex flex-col gap-y-4'>
      <h1 className='ml-2 text-4xl mt-4'>Home</h1>
      <h1 className='ml-2 text-4xl mt-4'>About</h1>
      <h1 className='ml-2 text-4xl mt-4' >Courses</h1>
