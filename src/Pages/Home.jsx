@@ -12,6 +12,12 @@ import cardData from '../DummyData/carddata';
 import objects1 from '/objects1.png'
 import hearts1 from '/hearts 1.png'
 import jgsaw from '/jigsaw 1.png'
+import profiles from '../DummyData/studentdata';
+import StudentCard from '../Components/UI/StudentCard';
+import testimonials from '../DummyData/testimonial';
+import Testimonial from '../Components/UI/Testimonial';
+import NavImage from '/nav.png'
+
 const Home = () => {
   return (
     <div >
@@ -76,7 +82,6 @@ const Home = () => {
       </div>
       <div className='flex flex-col items-center'>
 
-    
       <h1 className='text-[50px]'>Our Track</h1>
       <p className='text-[20px] pl-20 md:pl-0'>Lorem Ipsum is simply dummy text of the printing.</p>
       </div>
@@ -146,6 +151,113 @@ const Home = () => {
 
 </div>
 
+<div className='w-full h-[250px] border-2 border-blue-400 flex flex-col items-center justify-center md:flex-row md:justify-evenly md:h-[200px]'>
+
+      <div className='flex flex-col items-center'>
+
+      <h1 className='text-[30px]'>What Students Say</h1>
+      <p className='text-[20px] pl-20 md:pl-0'>Lorem Ipsum is simply dummy text of the printing.</p>
+      </div>
+    </div>
+
+
+<div className='w-full h-[902px] border-2 border-black flex flex-col gap-y-6 items-center md:w-full  md:flex-row md:h-[380px] md:p-20 md:gap-x-6'>
+{
+  testimonials.map((Element,index)=>(
+<Testimonial
+
+Element={Element}
+/>
+
+  ))
+}
+
+</div>
+
+
+{/* professor card ui */}
+
+<div className='w-full border-2 border-black flex flex-col gap-y-4 md:flex-row'>
+  {
+    profiles.map((professor,index)=>(
+  
+      <StudentCard professor={professor}/>
+
+    ))
+  }
+
+</div>
+
+
+{/* news letter subscription */}
+
+<div className=' bg-[#4D2C5E] text-center text-white flex flex-col items-center md:m-8 md:rounded-4xl'>
+
+<h1 className='text-xl pb-2 md:text-[40px] mt-6'>Subscribe to Our News Letter</h1>
+<p className='text-xl pb-2'>Lorem Ipsum is simply dummy text of the printing.</p>
+
+<div className='w-full h-[180px]  flex items-center justify-center md:w-[610px]'>
+<input type="text" 
+placeholder='Enter your Email'
+className='w-full h-[80px] rounded-[60px] pl-4 bg-white text-black ml-10
+ focus:outline-none
+'
+/>
+<Button text="subscribe" className='bg-orange-400 relative w-[160px] h-[55px] rounded-[30px] md:right-30 '/>
+</div>
+</div>
+
+
+{/* footer */}
+
+<div className='w-full bg-[#FDF8EE]  border-2 border-black flex flex-col gap-y-4 md:flex-row md:p-4 md:items-center'>
+
+<div className='border-2 border-black flex flex-col items-center gap-y-2 p-4'>
+  <div className='w-[185px] h-[150px] md:w-[250px] '>
+    <img src={NavImage} alt="" className='w-full h-full' />
+  </div>
+  <p className='text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+   <p className='text-xl'> Lorem Ipsum has been the industry's standard dummy a type specimen book.</p>
+
+</div>
+
+<div className='w-full h-[180px]  flex flex-col items-center gap-y-2'>
+  <h1 className='text-xl font-bold'>Company</h1>
+  <h1 className='text-[20px]'>About</h1>
+  <h1 className='text-[20px]'>How to work</h1>
+  <h1 className='text-[20px]' >Popular Course</h1>
+  <h1 className='text-[20px]' >Service</h1>
+</div>
+
+{/**2 */}
+
+<div className='w-full h-[150px]  flex flex-col items-center gap-y-2 md:flex-col'>
+  <h1 className='text-xl font-bold'>Courses</h1>
+  <h1 className='text-[20px]'>Categories</h1>
+  <h1 className='text-[20px]'>Offline Course</h1>
+  <h1 className='text-[20px]' >Video Course</h1>
+</div>
+
+{/*3 */}
+<div className='w-full h-[180px]  flex flex-col items-center gap-y-2'>
+  <h1 className='text-xl font-bold'>Support</h1>
+  <h1 className='text-[20px]'>FAQ</h1>
+  <h1 className='text-[20px]'>Help Center</h1>
+  <h1 className='text-[20px]' >Career</h1>
+  <h1 className='text-[20px]' >Privacy</h1>
+</div>
+
+
+{/**4 */}
+<div className='w-full h-[180px]  flex flex-col items-center gap-y-2'>
+  <h1 className='text-xl font-bold'>Contact Info</h1>
+  <h1 className='text-[20px]'>0913-705-3875</h1>
+  <h1 className='text-[20px]'>ElizabethJ@jourrapide.com</h1>
+  <h1 className='text-[20px]' >4808 Skinner Hollow Road</h1>
+  <h1 className='text-[20px]'>Days Creek, OR 97429</h1>
+</div>
+
+</div>
 
     </div>
 

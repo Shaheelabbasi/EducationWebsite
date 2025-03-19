@@ -34,16 +34,16 @@ const Navbar = () => {
 </div>
 
      {
-      !IsMenuOpen ? <FaXmark className='mt-8 text-4xl mr-2 md:hidden'
+      !IsMenuOpen ? <FaBars className='mt-8 text-4xl mr-2 md:hidden'
       onClick={ToggleMenu}
-      />:<FaBars className='mt-8 text-4xl mr-2 md:hidden'
+      />:<FaXmark className='mt-8 text-4xl mr-2 md:hidden'
       onClick={ToggleMenu}
       />
      }
     </div>
     {
 
-    !IsMenuOpen ?
+    IsMenuOpen ?
     <div className='md:hidden flex flex-col gap-y-4'>
      <h1 className='ml-2 text-4xl mt-4'>Home</h1>
      <h1 className='ml-2 text-4xl mt-4'>About</h1>
