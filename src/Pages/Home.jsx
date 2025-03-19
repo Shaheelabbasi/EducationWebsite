@@ -54,7 +54,7 @@ const Home = () => {
 
 
 
-      <div className='w-full h-[950px] relative bottom-10 rounded-[23px]  sm:w-full sm:h-[570px] md:w-full  md:h-[277px] bg-[#4D2C5E]  md:bottom-10  md:m-auto md:rounded-2xl md:flex md:items-center justify-center text-white sm:relative mb-4'>
+      <div className='w-full h-[950px] relative bottom-10 rounded-[23px]  sm:w-full sm:h-[570px] md:w-full  md:h-[290px] bg-[#4D2C5E]  md:bottom-10  md:m-auto md:rounded-2xl md:flex md:items-center justify-center text-white sm:relative mb-4'>
 
 {
   data.map((item,index)=>(
@@ -66,9 +66,9 @@ const Home = () => {
           <img src={item.iconSrc} alt="" />
           </div>
          
-         <div className='border-2 border-black w-full h-[180px] text-center p-2 sm:h-[150px] md:h-[220px]'>
+         <div className='border-2 border-black w-full h-[180px] text-justify p-2 sm:h-[150px] md:h-[220px] overflow-hidden'>
            <h1 className='text-[28px]'>{item.title}</h1>
-           <p className='text-xl sm:text-[20px]'>{item.descriptions}</p>
+           <p className='text-xl  sm:text-[20px]'>{item.descriptions}</p>
          </div>
         </div>
    ))
@@ -102,18 +102,18 @@ const Home = () => {
 </div>
 
 
-<div className='w-full h-[950px] relative border-2 border-amber-300 mt-4 bg-[#FDF8EE] md:flex md:justify-evenly md:w-full md:h-[700px] '>
+<div className='w-full h-[1000px] relative border-2 border-amber-300 mt-4 bg-[#FDF8EE] md:flex md:justify-evenly md:w-full md:h-[700px] '>
 <img src={back} alt="" className="absolute top-0 left-0 w-[120%] h-full object-center" />
 
-<div className='border-2 border-black md:h-[685px] md:w-[716px]'>
-<img src={objects1} alt="" className='' />
+<div className='border-2 border-black md:flex-shrink-0'>
+<img src={objects1} alt="" className='h-[600px] w-full object-cover md:h-full md:w-[516px]' />
 </div>
 
 
 
 
-<div className='flex flex-col items-center justify-center p-4 border-2 border-green-500 gap-y-4 md:h-[685px] md:w-[706px]'>
-<div className='hidden md:block md:w-[586px] md:border-2 border-black md:relative left-8 md:overflow-hidden'>
+<div className='flex flex-col items-center justify-center p-4 border-2 border-green-500 gap-y-4 md:h-[685px]'>
+<div className='hidden md:block md:w-full md:border-2 border-black md:relative left-8 md:overflow-hidden'>
 <p className='md:text-[69px] '>Premium <span className='text-orange-500'>Learning</span></p>
 <p className='md:text-[69px] '>Experience</p>
   </div>
@@ -212,13 +212,16 @@ className='w-full h-[80px] rounded-[60px] pl-4 bg-white text-black ml-10
 
 <div className='w-full bg-[#FDF8EE]  border-2 border-black flex flex-col gap-y-4 md:flex-row md:p-4 md:items-center'>
 
-<div className='border-2 border-black flex flex-col items-center gap-y-2 p-4'>
+<div className='border-2 border-black text-justify flex flex-col items-center p-4'>
   <div className='w-[185px] h-[150px] md:w-[250px] '>
-    <img src={NavImage} alt="" className='w-full h-full' />
+    <img src={NavImage} alt="" className='h-[51px] w-full' />
   </div>
+  
+
+  
   <p className='text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
    <p className='text-xl'> Lorem Ipsum has been the industry's standard dummy a type specimen book.</p>
-
+   
 </div>
 
 <div className='w-full h-[180px]  flex flex-col items-center gap-y-2'>
